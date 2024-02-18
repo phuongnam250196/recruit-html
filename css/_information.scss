@@ -1,0 +1,84 @@
+#page-information {
+    margin-top: 30px;
+
+    .information-title {
+        .box-title {
+            margin-bottom: 32px;
+        }
+    }
+
+    .information-banner {
+        .img {
+            width: 100%;
+        }
+    }
+
+    .information-flow {
+        background-color: var(--c-blue-2);
+        margin-top: 76px;
+        padding-top: 32px;
+        padding-bottom: 70px;
+
+        .box-title {
+            @include center_flex;
+            margin-bottom: 28px;
+            .title-group {
+                .title {
+                    font-size: 50px;
+                }
+                .desc {
+                    margin-top: 0;
+                }
+            }
+        }
+        .box {
+            .list {
+                .item {
+                    display: grid;
+                    grid-template-columns: 338px 1fr;
+                    align-items: center;
+                    background-color: var(--c-white);
+                    height: 135px;
+                    padding: 0 18px;
+                    margin-bottom: 65px;
+                    position: relative;
+                    &:last-child {
+                        margin-bottom: 0;
+                        .arrow-d {
+                            display: none;
+                        }
+                    }
+                    .num-group {
+                        .num-child {
+                            display: grid;
+                            grid-template-columns: 60px 1fr;
+                            align-items: center;
+                            gap: 28px;
+                            .num {
+                                color: var(--c-blue);
+                                font-size: 50px;
+                                font-weight: 700;
+                            }
+                            .txt {
+                                font-size: 20px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                    .content {
+                        white-space: pre-line;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 40px;
+                    }
+                    .arrow-d {
+                        position: absolute;
+                        bottom: -45px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+        }
+    }
+}

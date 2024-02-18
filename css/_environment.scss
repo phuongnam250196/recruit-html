@@ -1,0 +1,111 @@
+#page-environment {
+    margin-top: 30px;
+
+    .environment-title {
+        .box-title {
+            margin-bottom: 32px;
+        }
+    }
+
+    .environment-banner {
+        .img {
+            width: 100%;
+        }
+    }
+    .environment-1 {
+        @extend .about-1-base;
+        padding-top: 58px;
+        margin-top: 94px;
+        padding-bottom: 57px;
+        .box {
+            grid-template-columns: 412px 1fr;
+            .left {
+                padding: 80px 0;
+                .title {
+                    color: var(--c-main);
+                    font-family: "Noto Sans JP", sans-serif;
+                    margin-bottom: 24px;
+                    line-height: 51px;
+                    font-size: 30px;
+                }
+                .desc {
+                    padding-right: 0;
+                }
+            }
+            .right {
+                top: unset;
+                bottom: 60px;
+                width: 63%;
+                .img {
+                    height: 393px;
+                }
+            }
+        }
+    }
+
+    .environment-2 {
+        margin-bottom: 109px;
+        .box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // gap: 66px;
+
+            .left {
+                width: 52.5%;
+                .img {
+                    height: 406px;
+    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            
+            .right {
+                width: 47.5%;
+                padding-left: 82px;
+                padding-right: 76px;
+                .title {
+                    font-size: 30px;
+                    font-weight: 700;
+                    margin-bottom: 25px;
+                    line-height: 51px;
+                }
+    
+                .desc {
+                    font-size: 15px;
+                    line-height: 40px;
+                    font-weight: 400;
+                }
+            }
+        }
+        @media screen and (max-width:768px) {
+            .box-title {
+                margin-bottom: 47px;
+            }
+            .box {
+                grid-template-columns: 1fr;
+                .left {
+                    order: 2;
+                    .title {
+                        margin-bottom: 21px;
+                    }
+                }
+                .right {
+                    width: calc(100% + 44px - 124px);
+                    position: relative;
+                    right: -22px;
+                    margin-left: auto;
+                    height: 137px;
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                    .img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+#page-interview {
+    margin-bottom: 80px;
+    margin-top: 30px;
+
+    .box-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 77px;
+    }
+
+    .box {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 126px;
+        gap: 70px 28px;
+        .card-c {
+            width: 229px;
+            .card-img {
+                height: 277px;
+                position: relative;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                border-radius: 11px;
+
+                .text {
+                    position: absolute;
+                    bottom: 14px;
+                    left: 0;
+
+                    span {
+                        background: var(--c-white);
+                        display: inline-block;
+                        line-height: 23px;
+                        margin-bottom: 8px;
+                        padding-left: 8px;
+                        font-size: 17px;
+                        font-family: "Shippori Mincho B1", serif;
+                        color: var(--c-text);
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+
+            .card-text {
+                margin-top: 12px;
+                .content-2 {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    .hm {
+                        color: var(--c-blue);
+                        font-size: 34px;
+                        font-weight: 700;
+                        line-height: 29px;
+                    }
+                    .text {
+                        display: flex;
+                        flex-direction: column;
+                        .txt {
+                            background-color: var(--c-green);
+                            color: var(--c-white);
+                            border-radius: 0px 8.41px 0px 0px;
+                            font-size: 11px;
+                            font-weight: 700;
+                            padding: 3px 19px 3px 8px;
+                        }
+                        .date {
+                            font-size: 11px;
+                            line-height: 22px;
+                            font-weight: 400;
+                            padding-right: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
