@@ -11,6 +11,30 @@
         .img {
             width: 100%;
         }
+
+        @media screen and (max-width: 768px) {
+            height: 156px;
+
+            .img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .information-text {
+        display: none;
+
+        .desc {
+            font-size: 15px;
+            line-height: 40px;
+            margin-top: 24px;
+        }
+
+        @media screen and (max-width: 768px) {
+            display: block;
+        }
     }
 
     .information-flow {
@@ -22,15 +46,18 @@
         .box-title {
             @include center_flex;
             margin-bottom: 28px;
+
             .title-group {
                 .title {
                     font-size: 50px;
                 }
+
                 .desc {
                     margin-top: 0;
                 }
             }
         }
+
         .box {
             .list {
                 .item {
@@ -42,35 +69,42 @@
                     padding: 0 18px;
                     margin-bottom: 65px;
                     position: relative;
+
                     &:last-child {
                         margin-bottom: 0;
+
                         .arrow-d {
                             display: none;
                         }
                     }
+
                     .num-group {
                         .num-child {
                             display: grid;
                             grid-template-columns: 60px 1fr;
                             align-items: center;
                             gap: 28px;
+
                             .num {
                                 color: var(--c-blue);
                                 font-size: 50px;
                                 font-weight: 700;
                             }
+
                             .txt {
                                 font-size: 20px;
                                 font-weight: 700;
                             }
                         }
                     }
+
                     .content {
                         white-space: pre-line;
                         font-size: 15px;
                         font-weight: 400;
                         line-height: 40px;
                     }
+
                     .arrow-d {
                         position: absolute;
                         bottom: -45px;
@@ -80,14 +114,58 @@
                 }
             }
         }
+
+        @media screen and (max-width: 1000px) {
+            .box {
+                .list {
+                    .item {
+                        grid-template-columns: 200px 1fr;
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            padding-top: 20px;
+            margin-top: 37px;
+
+            .box-title {
+                margin-bottom: 31px;
+
+                .title-group {
+                    .desc {
+                        text-align: center;
+                    }
+                }
+            }
+
+            .box {
+                .list {
+                    .item {
+                        grid-template-columns: 1fr;
+                        height: inherit;
+                        padding-bottom: 36px;
+                        padding-top: 12px;
+
+                        .num-group {
+                            .num-child {
+                                gap: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .information-data {
         padding-top: 65px;
         padding-bottom: 80px;
+
         .information-btn {
             @include center_flex;
             margin-bottom: 142px;
+
             .in-btn {
                 background-color: var(--c-blue);
                 width: 355px;
@@ -99,6 +177,7 @@
                 position: relative;
                 color: var(--c-white);
                 text-decoration: none;
+
                 svg {
                     position: absolute;
                     top: 50%;
@@ -111,11 +190,14 @@
         .box-title {
             @include center_flex;
             margin-bottom: 40px;
+
             .title-group {
                 text-align: center;
+
                 .title {
                     font-size: 50px;
                 }
+
                 .desc {
                     margin-top: 0;
                     padding-left: 0;
@@ -126,17 +208,20 @@
         .information-table {
             .table {
                 margin-bottom: 0;
+
                 tr {
                     &:first-child {
                         td {
                             border-top: 1px solid var(--c-gray-2);
                         }
                     }
+
                     td {
                         font-size: 15px;
                         padding: 30px 0;
                         line-height: 25px;
                         border-bottom: 1px solid var(--c-gray-2);
+
                         &.td-1 {
                             font-weight: 700;
                             width: 196px;
@@ -144,11 +229,43 @@
                             padding-right: 4px;
                             vertical-align: middle;
                         }
+
                         &.td-2 {
                             white-space: pre-line;
+
                             &.padding-c {
                                 padding-top: 17px;
                                 padding-bottom: 17px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            padding-top: 55px;
+            padding-bottom: 62px;
+            .information-btn {
+                margin-bottom: 76px;
+    
+                .in-btn {
+                    background-color: var(--c-yellow);
+                }
+            }
+    
+            .box-title {
+                margin-bottom: 26px;
+            }
+
+            .information-table {
+                .table {
+                    tr {
+                        td {
+                            
+                            &.td-1 {
+                                width: 162px;
+                                padding-left: 0;
                             }
                         }
                     }

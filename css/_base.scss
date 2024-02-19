@@ -10,6 +10,7 @@
     --c-blue-2: #ECF5FF;
 
     --c-orange: #FE905A;
+    --c-yellow: #E7B504;
 }
 
 html {
@@ -107,6 +108,12 @@ p {
     justify-content: space-between;
     padding-left: 29px;
     padding-right: 22px;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        height: 70px;
+        padding-left: 37px;
+        font-size: 16px;
+    }
 }
 
 .title-group {

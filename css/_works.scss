@@ -1,0 +1,67 @@
+#page-works {
+    @extend #page-environment;
+    .environment-1 {
+        margin-top: 34px;
+        margin-bottom: 134px;
+        padding-bottom: 0;
+        .box {
+            .left {
+                padding: 58px 0;
+                .title {
+                    margin-bottom: 19px;
+                    line-height: inherit;
+                }
+                .desc {
+                    white-space: pre-line;
+                }
+            }
+            .right {
+                bottom: 152px;
+                .img {
+                    height: 406px;
+                }
+            }
+        }
+        @media screen and (max-width: 768px) {
+            margin-bottom: 26px;
+            margin-top: 26px;
+            .box {
+                .left {
+                    padding: 22px 0 30px;
+                    .title {
+                        margin-bottom: 0;
+                    }
+                }
+                .right {
+                    .img {
+                        height: 179px;
+                    }
+                }
+            }
+        }
+    }
+
+    .environment-2 {
+        margin-bottom: 152px;
+        .box {
+            .right {
+                .title {
+                    margin-bottom: 19px;
+                    line-height: inherit;
+                }
+            }
+            
+        }
+        @media screen and (max-width: 768px) {
+            margin-bottom: 60px;
+            .box {
+                .right {
+                    .title {
+                        margin-bottom: 0;
+                    }
+                }
+                
+            }
+        }
+    }
+}

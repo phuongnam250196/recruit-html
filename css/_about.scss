@@ -82,13 +82,14 @@
         padding-bottom: 43px;
         .box {
             grid-template-columns: 1fr;
+            gap: 24px;
             &::before {
                 width: calc(100% - 32px);
                 content: unset;
             }
             .left {
                 order: 2;
-                padding-right: 54px;
+                padding: 30px 54px 30px 0;
                 &::before {
                     content: "";
                     position: absolute;
@@ -109,11 +110,12 @@
                 }
             }
             .right {
+                width: calc(100vw - 71px);
                 position: relative;
-                width: 100%;
                 top: 0;
-                right: -22px;
+                right: -49px;
                 height: 229px;
+                
                 .img {
                     height: 100%;
                 }
@@ -159,6 +161,7 @@
                     color: var(--c-blue);
                     font-weight: 700;
                     margin-bottom: 13px;
+                    margin-top: 16px;
                 }
 
                 .desc {
@@ -182,18 +185,25 @@
         }
         @media screen and (max-width:768px) {
             .box-title {
-                margin-bottom: 47px;
+                margin-bottom: 37px;
+                .title-group {
+                    .title {
+                        font-size: 44px;
+                    }
+                }
             }
             .box {
                 grid-template-columns: 1fr;
+                gap: 87px;
                 .left {
                     order: 2;
                     .title {
-                        margin-bottom: 21px;
+                        margin-bottom: 13px;
+                        margin-top: 0;
                     }
                 }
                 .right {
-                    width: calc(100% + 44px - 124px);
+                    width: calc(100vw - 124px);
                     position: relative;
                     right: -22px;
                     margin-left: auto;
@@ -211,6 +221,7 @@
         padding-top: 106px;
         padding-bottom: 88px;
         margin-bottom: 172px;
+        overflow: hidden;
 
         .box {
             display: grid;
@@ -281,7 +292,7 @@
                 .left {
                     position: relative;
                     left: -22px;
-                    width: calc(100% + 44px - 124px);
+                    width: calc(100vw - 124px);
                     height: 138px;
                     .img {
                         height: 100%;
